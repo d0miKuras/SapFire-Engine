@@ -10,12 +10,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\SapFire\Application.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\SapFire.h" />
+    <ClInclude Include="src\SapFire\Application.h" />
+    <ClInclude Include="src\SapFire\Core.h" />
+    <ClInclude Include="src\SapFire\EntryPoint.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{a973fdfb-2f65-4072-9ca3-370f2b6a9981}</ProjectGuid>
     <RootNamespace>Sapphire</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SapFire</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -57,7 +67,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL;SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -71,7 +81,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL;SAPP_PLATFORM_WINDOWS;SAPP_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -81,12 +91,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Test.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Test.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
