@@ -1,0 +1,3 @@
+[submodule "SapFire/vendor/spdlog"]
+	path = SapFire/vendor/spdlog
+	url = https://github.com/gabime/spdlog
