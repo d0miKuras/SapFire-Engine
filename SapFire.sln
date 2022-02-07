@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{1DEAF455-C4F9-43FC-8F33-2816740E164D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SapFire", "SapFire\Sapphire.vcxproj", "{A973FDFB-2F65-4072-9CA3-370F2B6A9981}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SapFire", "SapFire\SapFire.vcxproj", "{A973FDFB-2F65-4072-9CA3-370F2B6A9981}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

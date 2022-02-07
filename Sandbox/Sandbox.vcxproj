@@ -87,7 +87,7 @@
     <ClCompile Include="src\SandboxApp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SapFire\Sapphire.vcxproj">
+    <ProjectReference Include="..\SapFire\SapFire.vcxproj">
       <Project>{a973fdfb-2f65-4072-9ca3-370f2b6a9981}</Project>
     </ProjectReference>
   </ItemGroup>
