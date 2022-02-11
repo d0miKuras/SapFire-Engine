@@ -1,3 +1,4 @@
+#include "SapFirePch.h"
 #include "Log.h"
 
 namespace SapFire

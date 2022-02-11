@@ -18,6 +18,9 @@ project "SapFire"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "SapFirePch.h"
+    pchsource "SapFire/src/SapFirePch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

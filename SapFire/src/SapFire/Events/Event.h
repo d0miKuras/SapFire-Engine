@@ -1,9 +1,7 @@
 #pragma once
 
+#include "SapFirePch.h"
 #include "SapFire/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace SapFire
 {

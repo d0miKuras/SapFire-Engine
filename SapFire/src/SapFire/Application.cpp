@@ -1,3 +1,4 @@
+#include "SapFirePch.h"
 #include "Application.h"
 
 #include "SapFire/Events/ApplicationEvent.h"

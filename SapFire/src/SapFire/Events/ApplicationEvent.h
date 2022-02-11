@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace SapFire
 {
 	class SAPP_API WindowResizeEvent : public Event
