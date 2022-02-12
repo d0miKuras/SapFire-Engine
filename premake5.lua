@@ -10,6 +10,12 @@ workspace "SapFire"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories that aren't ours -- 
+IncludeDir = {}
+IncludeDir["GLFW"] = "SapFire/vendor/GLFW/include"
+
+include "SapFire/vendor/GLFW"
+
 project "SapFire"
     location "SapFire"
     kind "SharedLib"
@@ -30,7 +36,14 @@ project "SapFire"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"
