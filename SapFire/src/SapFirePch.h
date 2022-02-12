@@ -15,6 +15,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "SapFire/Log.h"
 #ifdef SAPP_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
